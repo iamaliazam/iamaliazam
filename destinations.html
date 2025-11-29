@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Global Destinations | Hijra Global - Hajj, Umrah & International Tours</title>
+    <meta name="description" content="Explore sacred destinations like Makkah and Madinah, alongside popular international tours to Europe (Schengen), Turkey, Thailand, Malaysia, and Azerbaijan with Hijra Global." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
+    <meta name="theme-color" content="#C89A2B" />
+    
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Hijra Global - Home">
+    <img src="/images/hijra-logo-removebg-preview.png" alt="..." class="logo" loading="lazy" /> 
+</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">
+                <span class="sr-only">Toggle navigation menu</span>
+                ☰
+            </button> 
+            
+            <nav id="navList" class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="destinations.html" aria-current="page" id="destDropdownToggle" aria-expanded="false">Destinations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#holy-lands">Holy Lands (Makkah/Madinah)</a></li>
+                            <li><a href="#islamic-tours">Islamic Ziyarat Sites</a></li>
+                            <li><a href="#international-tours">International Tours</a></li> <li><a href="destinations.html">View All</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="packages.html">Packages (Hajj/Umrah)</a></li> <li class="has-dropdown">
+                        <a href="tours.html" id="tourDropdownToggle" aria-expanded="false">International Tours</a> <ul class="dropdown-menu">
+                            <li><a href="tours.html#europe">Europe (Schengen)</a></li>
+                            <li><a href="tours.html#malaysia">Thailand & Malaysia</a></li>
+                            <li><a href="tours.html#turkey">Turkey</a></li>
+                            <li><a href="tours.html#azerbaijan">Azerbaijan</a></li>
+                            <li><a href="tours.html">View All Tours</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="has-dropdown">
+                        <a href="services.html" id="serviceDropdownToggle" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services-visa.html">Visa Processing</a></li>
+                            <li><a href="services-hotels.html">Hotel Booking</a></li>
+                            <li><a href="services-flights.html">Flight Tickets</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html">Blog</a></li> <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="region-selector">
+                <select id="regionSelect" aria-label="Select Region and Currency">
+                    <option value="PKR">🇵🇰 Pakistan (PKR)</option>
+                    <option value="USD">🇺🇸 Global (USD)</option>
+                </select>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero inner-page-hero" 
+            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Packages/3742144_1986822.jpg') center center/cover no-repeat;">
+            <div class="container hero-content" style="padding-top: 100px; padding-bottom: 100px;">
+                <h1 class="hero-title">Discover the World: Spiritual Pilgrimage and Scenic Tours</h1>
+                <p class="lead">Hum aapko roohani manazil aur duniya ke azeem tareekhi aur khoobsurat maqamaat ki gehraiyon mein le jaate hain.</p>
+                <a href="contact.html?inquiry=custom_tour" class="btn large primary">Plan Your Dream Journey</a>
+            </div>
+        </section>
+        
+        <section class="section soft-bg">
+    <div class="container">
+        <div class="destination-highlight">
+            <img src="/images/Packages/masjid-al-haram-5.jpg" alt="Featured: Premium Umrah Package, Kaaba" loading="lazy">
+            <div>
+                <span class="package-badge gold" style="font-size: 0.8rem;">Exclusive Offer</span>
+                <h3>🕋 Premium Umrah Package 2026</h3>
+                <p>Makkah aur Madinah mein **5-star** sukoon aur **direct flights** ki sahulat ke saath. Apni roohani manzil ki booking aaj hi karwaein.</p>
+                <a href="packages.html?package=umrah-premium" class="btn small primary">View Umrah Packages</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="section packages-preview">
+            <div class="container section-head">
+                <h2>Explore Destinations by Category</h2>
+                <p class="lead">Apni pasand ki category par click karein aur manazil dekhein.</p>
+            </div>
+            
+            <div class="container">
+                <div class="tab-controls">
+                    <button class="tab-button active" data-tab="holy-lands" aria-controls="holy-lands-content">🕋 Holy Lands</button>
+                    <button class="tab-button" data-tab="islamic-tours" aria-controls="islamic-tours-content">🕌 Islamic Ziyarat</button>
+                    <button class="tab-button" data-tab="international-tours" aria-controls="international-tours-content">🌍 International Tours</button> 
+                </div>
+
+                <div id="holy-lands-content" class="tab-content active">
+                    <div class="grid three">
+                        
+                        <article class="package card highlight">
+                            <a href="destinations-makkah.html" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/masjid-al-haram-5.jpg" alt="Makkah - Masjid Al Haram" loading="lazy">
+                                    <span class="package-badge gold">Primary</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Makkah Al-Mukarramah</h4>
+                                    <p>Masjid Al-Haram se **qareeb tareen** accommodations aur 5-star services, Hajj aur Umrah ke liye.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> 5-Star Hotel Proximity</li>
+                                        <li><i class="fas fa-check-circle"></i> Exclusive Hajj Tents</li>
+                                        <li><i class="fas fa-check-circle"></i> Guided Rituals</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Roohani Safar</span>
+                                        <span class="btn small primary">View Details</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="package card">
+                            <a href="destinations-madinah.html" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/Madina Munawara.jpg" alt="Madinah - Masjid An Nabawi" loading="lazy">
+                                    <span class="package-badge silver">Blessed City</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Madinah Al-Munawwarah</h4>
+                                    <p>Masjid An-Nabawi ki shanti aur Roza-e-Rasool (PBUH) ki ziyarat ka sukoon.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> Masjid An-Nabawi Access</li>
+                                        <li><i class="fas fa-check-circle"></i> Historical Ziyarat Tours</li>
+                                        <li><i class="fas fa-check-circle"></i> Peaceful Environment</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Sukoon ka Safar</span>
+                                        <span class="btn small primary">View Details</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        
+                        <article class="package card">
+                            <a href="packages.html?hajj=true" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/Mount Arafat.jpg" alt="Mount Arafat during Hajj" loading="lazy">
+                                    <span class="package-badge platinum">Hajj Only</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Mashaer (Hajj Sites)</h4>
+                                    <p>Arafat, Mina aur Muzdalifah mein **aala darje** ke intizaamaat aur VIP services.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> Exclusive Mashaer Camp</li>
+                                        <li><i class="fas fa-check-circle"></i> All-Inclusive Meals</li>
+                                        <li><i class="fas fa-check-circle"></i> Private Transfers</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Ultimate Hajj</span>
+                                        <span class="btn small primary">Hajj Inquiry</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div id="islamic-tours-content" class="tab-content">
+                    <div class="grid three">
+                        
+                        <article class="package card highlight">
+                            <a href="tours.html?tour=alaqsa" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/tour-alaqsa-2.jpg" alt="Dome of the Rock, Al-Aqsa" loading="lazy">
+                                    <span class="package-badge tour">Featured Tour</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Al-Aqsa & Jordan Ziyarat</h4>
+                                    <p>Masjid Al-Aqsa, aur Jordan ki tarikhi sites ki tafseeli ziyarat ka ek naqabil-e-faramosh safar.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> Comprehensive 7-Day Plan</li>
+                                        <li><i class="fas fa-check-circle"></i> Expert Ziyarat Guide</li>
+                                        <li><i class="fas fa-check-circle"></i> All-Inclusive Packages</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">New Dates Announced</span>
+                                        <span class="btn small primary">View Tours</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="package card">
+                            <a href="tours.html?tour=turkey" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/tour-turkey.jpg" alt="Blue Mosque, Istanbul" loading="lazy">
+                                    <span class="package-badge tour">Cultural & History</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Turkey (Istanbul & Bursa)</h4>
+                                    <p>Ottoman history, shandaar masjidon, aur natural khoobsurti ka majmua.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> Visit Top Islamic Sites</li>
+                                        <li><i class="fas fa-check-circle"></i> Modern & Historical Cities</li>
+                                        <li><i class="fas fa-check-circle"></i> Customized Family Plans</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Book Now</span>
+                                        <span class="btn small primary">Inquire</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        
+                        <article class="package card">
+                            <a href="contact.html?inquiry=egypt_tour" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/tour-egypt.jpg" alt="Islamic Sites in Egypt" loading="lazy">
+                                    <span class="package-badge tour">New Route</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Egypt: Cairo & Islamic Sites</h4>
+                                    <p>Al-Azhar aur purani Islamic misr ki tarikhi ziyarat. Custom aur safe travel plan.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check-circle"></i> Al-Azhar Mosque & University</li>
+                                        <li><i class="fas fa-check-circle"></i> Historical Cairo Visit</li>
+                                        <li><i class="fas fa-check-circle"></i> Private Transportation</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Ask for Dates</span>
+                                        <span class="btn small primary">View Egypt Tours</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div id="international-tours-content" class="tab-content">
+                    <div class="grid three">
+                        
+                        <article class="package card highlight">
+                            <a href="tours.html?dest=europe" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/Schengen & UK.png" alt="Eiffel Tower, Paris" loading="lazy"> <span class="package-badge tour gold">Premium Visa Services</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>🇪🇺 Europe (Schengen & UK)</h4>
+                                    <p>Paris, Rome, Switzerland, aur London ke haseen manzar. **Hassle-free Schengen visa** support ke saath.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-plane-departure"></i> Customized Itineraries</li>
+                                        <li><i class="fas fa-university"></i> Culture & History Tours</li>
+                                        <li><i class="fas fa-passport"></i> Complete Visa Guidance</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Starts from $1200</span>
+                                        <span class="btn small primary">View Europe Packages</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="package card">
+                            <a href="tours.html?dest=asia" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/Thailand & Malaysia.png" alt="Beaches in Thailand" loading="lazy"> <span class="package-badge tour">Beach & City Breaks</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>🇹🇭🇲🇾 Thailand & Malaysia</h4>
+                                    <p>Bangkok ki ronak aur Malaysia ke haseen beaches. Asia ke top tourist spots ka safar.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-umbrella-beach"></i> Exotic Beach Resorts</li>
+                                        <li><i class="fas fa-shopping-bag"></i> Shopping & Sightseeing</li>
+                                        <li><i class="fas fa-concierge-bell"></i> Family Friendly Plans</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">All-inclusive</span>
+                                        <span class="btn small primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="package card">
+                            <a href="tours.html?dest=caucasus" class="card-link-wrapper">
+                                <div style="position: relative;">
+                                    <img src="/images/Packages/Turkey and Azerbjjan.jpg" alt="Baku, Azerbaijan" loading="lazy"> <span class="package-badge tour">Budget Friendly</span>
+                                </div>
+                                <div class="card-body">
+                                    <h4>🇹🇷🇦🇿 Turkey & Azerbaijan</h4>
+                                    <p>Istanbul ki tarikhi masjidon aur Baku ke modern sheharon ka do-mulki (two-country) package.</p>
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-mountain"></i> Caucasus Mountain Views</li>
+                                        <li><i class="fas fa-mosque"></i> Rich Cultural Heritage</li>
+                                        <li><i class="fas fa-car-side"></i> Private City Tours</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <span class="price">Special Offer</span>
+                                        <span class="btn small primary">Inquire for Details</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="contact.html?inquiry=custom_tour" class="btn primary large">Can't find your destination? Start a Custom Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section map-section">
+            <div class="container section-head">
+                <h2>Our Spiritual & Historical Travel Footprint</h2>
+                <p class="lead">Hum Makkah, Madinah se le kar Al-Aqsa aur Turkey tak, roohani aur tarikhi safar pesh karte hain.</p>
+            </div>
+
+            <div class="container ziyarat-map-container">
+                
+                <div class="map-placeholder">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385153.2560377484!2d39.7346389278918!3d21.43126839356395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced811801%3A0x6a05357876250000!2sMecca%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1700684000000!5m2!1sen!2s"
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Embedded map of key spiritual destinations">
+    </iframe>
+</div>
+                
+                <div class="ziyarat-list">
+                    <h3>Featured Locations:</h3>
+                    
+                    <div class="location-detail">
+                        <h4><i class="fas fa-city"></i> Makkah Sites</h4>
+                        <ul>
+                            <li><i class="fas fa-map-pin"></i> **Jabal-al-Noor:** Ghar-e-Hira ki jagah.</li>
+                            <li><i class="fas fa-map-pin"></i> **Jabal-al-Thawr:** Hijrat ke dauran Nabi (SAW) ne hifazat li.</li>
+                            <li><i class="fas fa-map-pin"></i> **Masjid Al-Taneem:** Umrah ke liye Meeqat.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="location-detail">
+                        <h4><i class="fas fa-star-and-crescent"></i> Madinah Sites</h4>
+                        <ul>
+                            <li><i class="fas fa-map-pin"></i> **Masjid Quba:** Islam ki pehli masjid.</li>
+                            <li><i class="fas fa-map-pin"></i> **Jabal Uhud:** Shaheedon ki qabrein aur tareekhi pahadi.</li>
+                            <li><i class="fas fa-map-pin"></i> **Masjid Qiblatayn:** Do Qiblon wali masjid.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="location-detail">
+                        <h4><i class="fas fa-globe-asia"></i> International Highlights</h4>
+                        <ul>
+                            <li><i class="fas fa-map-pin"></i> **Istanbul (Turkey):** Hagia Sophia aur Blue Mosque.</li>
+                            <li><i class="fas fa-map-pin"></i> **Paris (France):** Eiffel Tower aur Seine River.</li>
+                            <li><i class="fas fa-map-pin"></i> **Kuala Lumpur (Malaysia):** Petronas Towers aur Batu Caves.</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="note">Har safar mein hamare Mu'allim in maqamaat ki tareekh tafseel se batate hain aur aapki rehnumai karte hain.</p>
+                    <a href="tours.html" class="btn primary small">View All Guided Tours</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Ready to Explore the World with Hijra Global?</h2> <p>Hajj, Umrah, ya kisi bhi international tour ke liye aaj hi hamari expert team se mashwara lein.</p>
+                </div>
+                <div>
+                    <a href="contact.html" class="btn ghost large">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/923002666501" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="/images/whatsapp-icon.png" alt="WhatsApp Chat" class="whatsapp-icon" width="60" height="60" loading="lazy">
+    </a>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-column footer-about">
+                <img src="/images/hijra-logo-removebg-preview.png" alt="Hijra Global logo" class="footer-logo" loading="lazy">
+                <p>Specializing in premium Hajj, Umrah, Ziyarat, and worldwide **International Tour Packages** with a focus on comfort and high-quality service.</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Our Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><a href="tel:+923002666501">📞 +92 300 2666501</a></li>
+                    <li><a href="mailto:info@hijraglobal.com">📧 info@hijraglobal.com</a></li>
+                    <li><p>📍  Suite No: 113, 1st Floor Al-Ayesha Chamber Saddar Karachi, Pakistan.</p></li>
+                    <li>🕘 Office Hours: Mon - Sat, 9:00 AM - 5:00 PM</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/923002666501" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column footer-map">
+                <h4>Our Location</h4>
+                <div class="contact-map" role="region" aria-label="Office Location Map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1711973455945!2d67.019667327404!3d24.858001874403605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1dd395c97b%3A0xad5b1d3218570d01!2sAl-Ayesha%20Chambers!5e0!3m2!1sen!2s!4v1763901971755!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>Copyright © <span id="year">2025</span> Hijra Global. All rights reserved. | Developed by <a href="https://aliazam.netlify.app/" target="_blank">Ali Azam</a></p> 
+        </div>
+    </footer>
+</body>
+</html>

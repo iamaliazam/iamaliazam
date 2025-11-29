@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Travel Services - Visa, Hotels, Flights | Hijra Global</title>
+    <meta name="description" content="Comprehensive travel services including Umrah/Hajj Visa processing, 5-star hotel bookings, and flight ticket arrangements." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
+    <meta name="theme-color" content="#C89A2B" />
+    
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Hijra Global - Home">
+    <img src="/images/hijra-logo-removebg-preview.png" alt="..." class="logo" loading="lazy" /> 
+</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">
+                <span class="sr-only">Toggle navigation menu</span>
+                ☰
+            </button> 
+            
+            <nav id="navList" class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="destinations.html" id="destDropdownToggle" aria-expanded="false">Destination</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="destinations-makkah.html">Makkah</a></li>
+                            <li><a href="destinations-madinah.html">Madinah</a></li>
+                            <li><a href="destinations.html#arafat">Mount Arafat</a></li>
+                            <li><a href="destinations.html#haram">Haram</a></li>
+                            <li><a href="destinations.html">View All</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="packages.html">Packages</a></li>
+                    
+                    <li><a href="tours.html">Tours</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="services.html" aria-current="page" id="serviceDropdownToggle" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services-visa.html">Visa Processing</a></li>
+                            <li><a href="services-hotels.html">Hotel Booking</a></li>
+                            <li><a href="services-flights.html">Flight Tickets</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html">Blog</a></li> <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="region-selector">
+                <select id="regionSelect" aria-label="Select Region and Currency">
+                    <option value="PKR">🇵🇰 Pakistan (PKR)</option>
+                    <option value="USD">🇺🇸 Global (USD)</option>
+                </select>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero inner-page-hero" 
+            style="background-image: url('/images/services-hero.jpg'); background-size: cover; background-position: center;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Individual Travel Services</h1>
+                <p class="lead">Book a la carte services: Visa, luxury hotels, and flights for your journey.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container section-head">
+                <h2>Our Premium Travel Solutions</h2>
+                <p class="lead">Beyond packages, we offer specialized services to make your planning seamless.</p>
+            </div>
+            
+            <div class="container grid three services-grid">
+                
+                <article class="service-card card highlight">
+                    <i class="fas fa-passport fa-4x" style="color: var(--primary-color);"></i>
+                    <h3>Umrah & Hajj Visa</h3>
+                    <p>Hassle-free processing of your official Saudi visas. We handle all paperwork and embassy liaison.</p>
+                    <a href="services-visa.html" class="btn small primary">Learn More</a>
+                </article>
+
+                <article class="service-card card">
+                    <i class="fas fa-hotel fa-4x" style="color: var(--primary-color);"></i>
+                    <h3>Premium Hotel Booking</h3>
+                    <p>Exclusive rates for 4-star and 5-star hotels near the Haram Sharif in Makkah and Madinah.</p>
+                    <a href="services-hotels.html" class="btn small primary">Search Hotels</a>
+                </article>
+
+                <article class="service-card card highlight">
+                    <i class="fas fa-plane-departure fa-4x" style="color: var(--primary-color);"></i>
+                    <h3>Flight Ticketing</h3>
+                    <p>Best fares on preferred airlines (Saudia, Emirates, Qatar) with direct and connecting flight options.</p>
+                    <a href="services-flights.html" class="btn small primary">Book Flights</a>
+                </article>
+                
+            </div>
+        </section>
+
+        <section class="section soft-bg">
+            <div class="container grid two two-column-content">
+                <div>
+                    <h2>Exclusive Logistics Support</h2>
+                    <p>Our commitment extends to ensuring your entire journey is comfortable, from airport to hotel.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Private Transfer:</strong> Dedicated AC vehicles for airport and inter-city transfers.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Travel Insurance:</strong> Customized travel and medical insurance plans.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Custom Itineraries:</strong> Planning your day-to-day schedule and religious activities.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Forex Assistance:</strong> Guidance on currency exchange and local spending.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="/images/services-logistics.jpg" alt="Luxury car used for private transfer" class="about-image" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Need a specific service?</h2> 
+                    <p>Contact our service desk for a personalized quotation.</p>
+                </div>
+                <div>
+                    <a href="contact.html?inquiry=service" class="btn ghost large">Request Service Quote</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/923002666501" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="/images/whatsapp-icon.png" alt="WhatsApp Chat" class="whatsapp-icon" width="60" height="60" loading="lazy">
+    </a>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-column footer-about">
+                <img src="/images/hijra-logo-removebg-preview.png" alt="Hijra Global logo" class="footer-logo" loading="lazy">
+                <p>Specializing in premium Hajj, Umrah, and Ziyarat packages with a focus on spiritual enrichment and comfort.</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Our Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><a href="tel:+923002666501">📞 +92 300 2666501</a></li>
+                    <li><a href="mailto:info@hijraglobal.com">📧 info@hijraglobal.com</a></li>
+                    <li><p>📍 Suite No: 113, 1st Floor Al-Ayesha Chamber Saddar Karachi, Pakistan.</p></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/923002666501" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column footer-map">
+                <h4>Our Location</h4>
+                <div class="contact-map" role="region" aria-label="Office Location Map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1711973455945!2d67.019667327404!3d24.858001874403605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1dd395c97b%3A0xad5b1d3218570d01!2sAl-Ayesha%20Chambers!5e0!3m2!1sen!2s!4v1763901971755!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>Copyright © <span id="year">2025</span> Hijra Global. All rights reserved. | Developed by <a href="https://aliazam.netlify.app/" target="_blank">Ali Azam</a></p> 
+        </div>
+    </footer>
+</body>
+</html>

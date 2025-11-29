@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hijra Global - Premium Hajj, Umrah & Islamic Tours</title>
+    <meta name="description" content="Book your premium Hajj, Umrah, Ziyarat, and international Islamic tours with Hijra Global. Expert visa, hotel, and flight services." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
+    <meta name="theme-color" content="#C89A2B" />
+    
+    <link rel="preload" href="/images/hero-bg.jpg" as="image">
+    <script defer src="script.js"></script>
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TravelAgency", 
+    "name": "Hijra Global - Premium Hajj, Umrah & International Tours",
+    "url": "https://www.yourwebsite.com/", 
+    "logo": "https://www.yourwebsite.com/images/hijra-logo-removebg-preview.png",
+    "description": "Book your premium Hajj, Umrah, Ziyarat, and exclusive international tourist packages including Europe, Turkey, and Southeast Asia with Hijra Global.",
+    "serviceType": [
+        "Hajj Packages", 
+        "Umrah Packages", 
+        "Islamic Tours", 
+        "Ziyarat",
+        "International Tour Packages",
+        "Europe Schengen Tours",
+        "Turkey Tours",
+        "Southeast Asia Tours (Thailand/Malaysia)"
+    ],
+    "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+    }
+}
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Hijra Global - Home">
+    <img src="/images/hijra-logo-removebg-preview.png" alt="..." class="logo" loading="lazy" /> 
+</a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">
+                <span class="sr-only">Toggle navigation menu</span>
+                ☰
+            </button> 
+            
+            <nav id="navList" class="nav">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="destinations.html" id="destDropdownToggle" aria-expanded="false">Destination</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="destinations-makkah.html">Makkah</a></li>
+                            <li><a href="destinations-madinah.html">Madinah</a></li>
+                            <li><a href="destinations.html#arafat">Mount Arafat</a></li>
+                            <li><a href="destinations.html#haram">Haram</a></li>
+                            <li><a href="destinations.html"></a></li>
+                            <li><a href="tours.html#europe">Europe (Schengen)</a></li>
+                            <li><a href="tours.html#malaysia">Malaysia & Thailand</a></li>
+                            <li><a href="tours.html#turkey">Turkey</a></li>
+                            <li><a href="tours.html#azerbaijan">Azerbaijan</a></li>
+                            <li><a href="tours.html">View All Tours</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="packages.html">Packages</a></li>
+                    
+                    <li><a href="tours.html">Tours</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="services.html" id="serviceDropdownToggle" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services-visa.html">Visa Processing</a></li>
+                            <li><a href="services-hotels.html">Hotel Booking</a></li>
+                            <li><a href="services-flights.html">Flight Tickets</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html">Blog</a></li> <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="region-selector">
+                <select id="regionSelect" aria-label="Select Region and Currency">
+                    <option value="PKR">🇵🇰 Pakistan (PKR)</option>
+                    <option value="USD">🇺🇸 Global (USD)</option>
+                </select>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero" 
+            style="background-image: url('/images/Packages/Hero 2.png'); background-size: cover; background-position: center;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Your Journey to the World's Most Beautiful Destinations Starts Here</h1>
+                <p class="lead">From the sacred lands of Makkah and Madinah to the vibrant cities of Europe and Asia, explore our premium tour packages.</p>
+                <div class="hero-ctas">
+                    <a href="packages.html" class="btn large primary">Explore Packages</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tour-cta-highlight">
+    <div class="container">
+        <p class="highlight-text">
+            <i class="fas fa-calendar-alt"></i> 
+            **Next Umrah Group Departs:** <span id="groupDepartureTime">
+                Calculating time remaining... 
+            </span>
+            
+            <span class="departure-location">(Karachi/Lahore)</span> - 
+            <a href="packages.html" style="color: inherit; font-weight: 700;">Book Now</a>
+        </p>
+    </div>
+</section>
+
+        <section class="quick-filter-section">
+    <div class="container quick-filter-box">
+        <h3>Find Your Perfect Umrah Package Quickly</h3>
+        <form id="quickFilterForm" action="packages.html" method="GET">
+            <div class="filter-group">
+                <label for="filterDuration">Duration</label>
+                <select id="filterDuration" name="duration" aria-label="Select package duration">
+                    <option value="">Any Duration</option>
+                    <option value="7">7 Days</option>
+                    <option value="10">10 Days</option>
+                    <option value="14">14 Days</option>
+                    <option value="21">21 Days</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="filterRating">Hotel Rating</label>
+                <select id="filterRating" name="stars" aria-label="Select hotel star rating">
+                    <option value="">Any Rating</option>
+                    <option value="3">3-Star +</option>
+                    <option value="4">4-Star +</option>
+                    <option value="5">5-Star</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn primary small">Search Packages <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+</section>
+
+        <section class="section soft-bg">
+            <div class="container grid four icons-grid">
+                <article class="icon-card">
+                    <i class="fas fa-bed fa-3x" style="color: var(--primary-color);"></i>
+                    <h4>5-Star Accommodations</h4>
+                    <p>Stay near the Haram with exclusive hotel partnerships.</p>
+                </article>
+                <article class="icon-card">
+                    <i class="fas fa-passport fa-3x" style="color: var(--primary-color);"></i>
+                    <h4>Hassle-Free Visas</h4>
+                    <p>Full support for Umrah and Hajj visa application processing.</p>
+                </article>
+                <article class="icon-card">
+                    <i class="fas fa-globe-africa fa-3x" style="color: var(--primary-color);"></i>
+                    <h4>Guided Ziyarat Tours</h4>
+                    <p>Knowledgeable guides for Makkah, Madinah, and Al-Aqsa tours.</p>
+                </article>
+                <article class="icon-card">
+                    <i class="fas fa-user-shield fa-3x" style="color: var(--primary-color);"></i>
+                    <h4>Reliable Service</h4>
+                    <p>Years of experience ensuring a seamless spiritual journey.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section packages-preview">
+            <div class="container section-head">
+                <h2>Our Featured Umrah Packages</h2>
+                <p class="lead">Experience the sacred journey with comfort and peace of mind.</p>
+            </div>
+            
+            <div class="container grid three">
+                <article class="package card" data-pkr-price="330000" data-usd-price="1200" data-pkr-desc="Rs. 330,000" data-usd-desc="$1200">
+                    <a href="packages.html" class="card-link-wrapper">
+                        <div style="position: relative;">
+                            <img src="/images/Packages/Silver-Package.png" alt="Silver Umrah Package" loading="lazy">
+                            <span class="package-badge booked-count">✅ 120 Booked Last Month</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Silver Umrah (10 Days)</h4>
+                            <p>Comfortable stay with walking distance to Haramain. Economy flights included.</p>
+                            <ul>
+                                <li>7 Nights Makkah | 3 Nights Madinah</li>
+                                <li>4-Star Hotels</li>
+                                <li>Guided Ziyarat</li>
+                            </ul>
+                            <div class="card-actions">
+                                <span class="price">Starting from <span class="dynamic-price" data-price-pkr="330000" data-price-usd="1200">Rs. 330,000</span></span>
+                                <span class="btn small primary">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="package card highlight" data-pkr-price="690000" data-usd-price="2500" data-pkr-desc="Rs. 690,000" data-usd-desc="$2500">
+                    <a href="packages.html" class="card-link-wrapper">
+                        <div style="position: relative;">
+                            <img src="/images/Packages/Gold-Package.png" alt="Gold Umrah Package" loading="lazy">
+                            <span class="package-badge top-rated">🏆 Top Rated Package</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Gold Umrah (14 Days)</h4>
+                            <p>Best selling package with superior services and proximity to Masjid Al Haram.</p>
+                            <ul>
+                                <li>9 Nights Makkah | 5 Nights Madinah</li>
+                                <li>5-Star Luxury Hotels</li>
+                                <li>Private Transfer</li>
+                            </ul>
+                            <div class="card-actions">
+                                <span class="price">Starting from <span class="dynamic-price" data-price-pkr="690000" data-price-usd="2500">Rs. 690,000</span></span>
+                                <span class="btn small primary">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="package card">
+                    <a href="packages.html" class="card-link-wrapper">
+                        <div style="position: relative;">
+                            <img src="/images/Packages/Platinum-Package.png" alt="Platinum Hajj Package" loading="lazy">
+                            <span class="package-badge seats-left">🚨 Limited Seats! 5 Left</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Luxury Hajj (Limited Seats)</h4>
+                            <p>An all-inclusive, premium Hajj experience with private camps and VIP services.</p>
+                            <ul>
+                                <li>VIP Tents in Mina & Arafat</li>
+                                <li>Exclusive Mashaer Transfer</li>
+                                <li>Gourmet Meals</li>
+                            </ul>
+                            <div class="card-actions">
+                                <span class="price">Inquire for Price</span>
+                                <span class="btn small primary">Hajj Inquiry</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="packages.html" class="btn primary large">View All Packages</a>
+            </div>
+        </section>
+
+        <section class="section soft-bg testimonials-section">
+            <div class="container section-head">
+                <h2>What Our Pilgrims Say About Us</h2>
+                <p class="lead">Experiences from the hearts of pilgrims and visitors that testify to our service.</p>
+            </div>
+            
+            <div class="container grid three testimonials-grid">
+                
+                <article class="testimonial-card card">
+                    <div class="card-body">
+                        <i class="fas fa-quote-left fa-2x quote-icon" aria-hidden="true"></i>
+                        <p>“Hijra Global made my Umrah journey exceptional. The 5-star hotels were right next to the Haram, and the guide's assistance was excellent. Heartfelt thank you!”</p>
+                        <div class="client-info">
+                            <div class="client-name">Muhammad Ali S.</div>
+                            <div class="package-ref">Gold Umrah Package</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card card highlight">
+                    <div class="card-body">
+                        <i class="fas fa-quote-left fa-2x quote-icon" aria-hidden="true"></i>
+                        <p>“Every small issue during Hajj was immediately resolved. With VIP arrangements in Mina and Arafat, we could focus better on our worship. Highly recommended.”</p>
+                        <div class="client-info">
+                            <div class="client-name">Fatima J.</div>
+                            <div class="package-ref">Platinum Hajj Package</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card card">
+                    <div class="card-body">
+                        <i class="fas fa-quote-left fa-2x quote-icon" aria-hidden="true"></i>
+                        <p>“The hotel location and food in Madinah were excellent. The group Ziyarat tours helped us understand historical sites in a new way. JazakAllah khair.”</p>
+                        <div class="client-info">
+                            <div class="client-name">Ahmed K.</div>
+                            <div class="package-ref">Silver Umrah + Ziyarat</div>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="about.html#reviews" class="btn primary large">Read All Reviews</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container section-head">
+                <h2>Latest Insights & Travel Resources</h2>
+                <p class="lead">Read essential information and spiritual advice to prepare for your journey.</p>
+            </div>
+            
+            <div class="container grid three">
+                
+                <article class="blog-post card">
+                    <a href="blog-post-1.html" class="card-link-wrapper">
+                        <img src="/images/Packages/Umrah-Steps.png" alt="Umrah Steps Explained" loading="lazy">
+                        <div class="card-body">
+                            <span class="blog-tag umrah">Umrah Guide</span>
+                            <h4>The Correct Method of Umrah...</h4>
+                            <p>Understand the essential stages of Tawaf, Sa'i, and Halq/Qasr with pictures and details.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="blog-post card">
+                    <a href="blog-post-2.html" class="card-link-wrapper">
+                        <img src="/images/Packages/Hajj-Packing-List.png" alt="Hajj Packing List" loading="lazy">
+                        <div class="card-body">
+                            <span class="blog-tag tips">Travel Tips</span>
+                            <h4>Essential Packing for Hajj/Umrah...</h4>
+                            <p>Complete list of essential items like Ihram, medicines, and clothes, to make your journey easy.</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="blog-post card">
+                    <a href="blog-post-3.html" class="card-link-wrapper">
+                        <img src="/images/Packages/Jabal-Uhud.png" alt="History of Jabal Uhud" loading="lazy">
+                        <div class="card-body">
+                            <span class="blog-tag history">Ziyarat History</span>
+                            <h4>History of Jabal Uhud...</h4>
+                            <p>Learn about the events and lessons from the Battle of Uhud on this sacred mountain of Madinah.</p>
+                        </div>
+                    </a>
+                </article>
+                
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="blog.html" class="btn primary large">View All Guides & Resources</a>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container section-head">
+                <h2>Got Questions? We Have Answers.</h2>
+                <p class="lead">Answers to common questions regarding your Umrah, Hajj, and Tours.</p>
+            </div>
+            
+            <div class="container grid two faq-grid">
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>How long does the visa process take?</span></h4>
+                    <p class="faq-answer">Umrah visa processing usually completes within **7 to 10 working days**, but Hajj visa time depends on government procedures. We provide full guidance.</p>
+                </div>
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>Are the hotels within walking distance of the Haram?</span></h4>
+                    <p class="faq-answer">Our **Gold** and **Platinum** packages only include **closest 5-star hotels** to Masjid Al Haram and Masjid An Nabawi, to ensure ease in your worship.</p>
+                </div>
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>Are meals included in your packages?</span></h4>
+                    <p class="faq-answer">Most premium packages include **Buffet Breakfast** or **Half-Board (Breakfast and Dinner)**. Options are available according to your needs.</p>
+                </div>
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>Is a guide facility available in Ziyarat tours?</span></h4>
+                    <p class="faq-answer">Yes, every one of our group packages includes an **experienced and certified Mu'allim/Guide** who provides you with historical and spiritual information.</p>
+                </div>
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>What sites are included in Madinah Ziyarat?</span></h4>
+                    <p class="faq-answer">Standard Madinah Ziyarat includes sacred sites like **Masjid Quba**, **Jabal Uhud**, **Masjid Qiblatayn**, and the gravesite in **Jannatul Baqi**.</p>
+                </div>
+                
+                <div class="faq-item card">
+                    <h4 class="faq-question"><i class="fas fa-question-circle"></i> <span>Do you offer international tours as well?</span></h4>
+                    <p class="faq-answer">Yes, we create custom tour packages for other international destinations, including **Europe (Schengen)**, **Turkey**, and **Southeast Asia (Malaysia/Thailand)**, offering full visa and itinerary support.</p>
+                </div>
+                
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="faq.html" class="btn large ghost">View Complete FAQ Page</a>
+            </div>
+        </section>
+
+        <div id="promoModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+        <button id="closeModal" class="close-btn" aria-label="Close promotion popup">×</button>
+        
+        <div class="modal-header">
+            <h3 class="modal-title">🎉 Special Umrah Offer!</h3>
+        </div>
+        
+        <div class="modal-body">
+            <p class="promo-text">Only for **Limited Seats**, book our 14-Day Gold Umrah Package and get a **Free Ziyarat Tour to Al-Aqsa**!</p>
+            
+            <div class="promo-details">
+                <i class="fas fa-clock"></i> Offer ends in: <span id="popup-countdown">Loading...</span>
+            </div>
+            
+            
+            <img src="/images/Packages/Promotion-Popup.png" alt="Umrah Package Promotion" class="modal-image" loading="lazy">
+        </div>
+        
+        <div class="modal-footer">
+            <a href="packages.html#gold-offer" class="btn primary large modal-cta">View Details & Book Now</a>
+        </div>
+    </div>
+</div>
+
+        <section class="section cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Ready for your spiritual journey?</h2> 
+                    <p>Get a personalized quote for your Hajj or Umrah package today.</p>
+                </div>
+                <div>
+                    <a href="contact.html" class="btn ghost large">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/923002666501" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="/images/whatsapp-icon.png" alt="WhatsApp Chat" class="whatsapp-icon" width="60" height="60" loading="lazy">
+    </a>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-column footer-about">
+                <img src="/images/hijra-logo-removebg-preview.png" alt="Hijra Global logo" class="footer-logo" loading="lazy">
+                <p>
+    Specializing in **Premium Hajj & Umrah** experiences and **International Ziyarat Tours**. We focus on comfort, spiritual depth, and reliable ground logistics for every journey.
+</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Our Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><a href="tel:+923002666501">📞 +92 300 2666501</a></li>
+                    <li><a href="mailto:info@hijraglobal.com">📧 info@hijraglobal.com</a></li>
+                    <li>📍 Suite No: 113, 1st Floor Al-Ayesha Chamber Saddar Karachi, Pakistan.</li> 
+                    <li>🕘 Office Hours: Mon - Sat, 9:00 AM - 5:00 PM</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/923002666501" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column footer-map">
+                <h4>Our Location</h4>
+                <div class="contact-map" role="region" aria-label="Office Location Map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1711973455945!2d67.019667327404!3d24.858001874403605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1dd395c97b%3A0xad5b1d3218570d01!2sAl-Ayesha%20Chambers!5e0!3m2!1sen!2s!4v1763901971755!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>Copyright © <span id="year">2025</span> Hijra Global. All rights reserved. | Developed by <a href="https://aliazam.netlify.app/" target="_blank">Ali Azam</a></p> 
+        </div>
+    </footer>
+</body>
+</html>
